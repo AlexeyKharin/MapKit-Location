@@ -27,44 +27,44 @@ class ViewController: UIViewController {
             
             let alert = UIAlertController(title: "Какой тип локации предпочитаете", message: nil, preferredStyle: .alert)
             
-            let actionGasStation = UIAlertAction(title: "Заправка", style: .destructive) { (alert) in
+            let actionGasStation = UIAlertAction(title: "Заправка", style: .destructive) { [weak self] (alert) in
                 let annotation = GoalAnnotation(coordinate: touchCoordinates, typeGoal: .gasStation, title: "Заправка")
-                self.mapView.addAnnotation(annotation)
+                self?.mapView.addAnnotation(annotation)
             }
             
-            let actionMeeting = UIAlertAction(title: "Встреча", style: .destructive) { (alert) in
+            let actionMeeting = UIAlertAction(title: "Встреча", style: .destructive) { [weak self] (alert) in
                 let annotation = GoalAnnotation(coordinate: touchCoordinates, typeGoal: .meeting, title: "Встреча")
-                self.mapView.addAnnotation(annotation)
+                self?.mapView.addAnnotation(annotation)
             }
             
-            let actionHospital = UIAlertAction(title: "Больница", style: .destructive) { (alert) in
+            let actionHospital = UIAlertAction(title: "Больница", style: .destructive) { [weak self] (alert) in
                 let annotation = GoalAnnotation(coordinate: touchCoordinates, typeGoal: .hospital, title: "Больница")
-                self.mapView.addAnnotation(annotation)
+                self?.mapView.addAnnotation(annotation)
             }
             
-            let actionRestaurant = UIAlertAction(title: "Ресторан", style: .destructive) { (alert) in
+            let actionRestaurant = UIAlertAction(title: "Ресторан", style: .destructive) { [weak self] (alert) in
                 let annotation = GoalAnnotation(coordinate: touchCoordinates, typeGoal: .restaurant, title: "Ресторан")
-                self.mapView.addAnnotation(annotation)
+                self?.mapView.addAnnotation(annotation)
             }
             
-            let actionTaxi = UIAlertAction(title: "Такси", style: .destructive) { (alert) in
+            let actionTaxi = UIAlertAction(title: "Такси", style: .destructive) { [weak self] (alert) in
                 let annotation = GoalAnnotation(coordinate: touchCoordinates, typeGoal: .taxi, title: "Такси")
-                self.mapView.addAnnotation(annotation)
+                self?.mapView.addAnnotation(annotation)
             }
             
-            let actionBank = UIAlertAction(title: "Банк", style: .destructive) { (alert) in
+            let actionBank = UIAlertAction(title: "Банк", style: .destructive) { [weak self] (alert) in
                 let annotation = GoalAnnotation(coordinate: touchCoordinates, typeGoal: .bank, title: "Банк")
-                self.mapView.addAnnotation(annotation)
+                self?.mapView.addAnnotation(annotation)
             }
             
-            let actionSculpture = UIAlertAction(title: "Достопримечательности", style: .destructive) { (alert) in
+            let actionSculpture = UIAlertAction(title: "Достопримечательности", style: .destructive) { [weak self] (alert) in
                 let annotation = GoalAnnotation(coordinate: touchCoordinates, typeGoal: .sculpture, title: "Достопримечательности")
-                self.mapView.addAnnotation(annotation)
+                self?.mapView.addAnnotation(annotation)
             }
             
-            let actionOther = UIAlertAction(title: "Другое", style: .destructive) { (alert) in
+            let actionOther = UIAlertAction(title: "Другое", style: .destructive) { [weak self] (alert) in
                 let annotation = GoalAnnotation(coordinate: touchCoordinates, typeGoal: .other, title: "Другое")
-                self.mapView.addAnnotation(annotation)
+                self?.mapView.addAnnotation(annotation)
             }
             
             [actionGasStation, actionTaxi, actionBank, actionOther, actionHospital, actionSculpture, actionRestaurant, actionMeeting].forEach { alert.addAction($0) }
