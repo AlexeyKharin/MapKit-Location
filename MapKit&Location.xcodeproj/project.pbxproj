@@ -13,6 +13,8 @@
 		B437847627E33142008C9C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B437847427E33142008C9C54 /* Main.storyboard */; };
 		B437847827E3314B008C9C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B437847727E3314B008C9C54 /* Assets.xcassets */; };
 		B437847B27E3314B008C9C54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B437847927E3314B008C9C54 /* LaunchScreen.storyboard */; };
+		B437848427E3C3A3008C9C54 /* GoalAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437848327E3C3A2008C9C54 /* GoalAnnotation.swift */; };
+		B437848727E3C923008C9C54 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437848627E3C923008C9C54 /* GoalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B437847727E3314B008C9C54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B437847A27E3314B008C9C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B437847C27E3314B008C9C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B437848327E3C3A2008C9C54 /* GoalAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalAnnotation.swift; sourceTree = "<group>"; };
+		B437848627E3C923008C9C54 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				B437846E27E33141008C9C54 /* AppDelegate.swift */,
 				B437847027E33141008C9C54 /* SceneDelegate.swift */,
 				B437847227E33141008C9C54 /* ViewController.swift */,
+				B437848327E3C3A2008C9C54 /* GoalAnnotation.swift */,
+				B437848627E3C923008C9C54 /* GoalView.swift */,
 				B437847427E33142008C9C54 /* Main.storyboard */,
 				B437847727E3314B008C9C54 /* Assets.xcassets */,
 				B437847927E3314B008C9C54 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B437847327E33141008C9C54 /* ViewController.swift in Sources */,
+				B437848427E3C3A3008C9C54 /* GoalAnnotation.swift in Sources */,
+				B437848727E3C923008C9C54 /* GoalView.swift in Sources */,
 				B437846F27E33141008C9C54 /* AppDelegate.swift in Sources */,
 				B437847127E33141008C9C54 /* SceneDelegate.swift in Sources */,
 			);
